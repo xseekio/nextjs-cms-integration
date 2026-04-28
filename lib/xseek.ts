@@ -10,6 +10,8 @@ export type XseekArticleSummary = {
   qualityScore: number | null;
   opportunityId: string | null;
   createdAt: string;
+  /** Last edit time on the article (DB updated_at). Best signal for sitemap lastmod. */
+  updatedAt: string | null;
   publishedAt: string | null;
 };
 
